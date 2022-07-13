@@ -1,0 +1,40 @@
+.auth-wrapper{
+  margin: 0 40px 20px
+}
+
+.input.MuiFormControl-root{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.auth-helper-text{
+  margin-top: 26px;
+
+  a{
+    margin-left: 6px;
+  }
+}
+
+.auth__fields-wrapper{
+  display: grid;
+  grid-template-columns: 140px auto;
+  align-items: center;
+  margin-bottom: 12px;
+
+  #mui-component-select-role{
+    padding: 10px 15px;;
+  }
+}
+
+.auth__uploaded-image-name{
+  margin-top: 6px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.login_user-profiles{
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 4px 6px;
+  margin-top: 6px;
+}

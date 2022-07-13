@@ -1,0 +1,147 @@
+//.answer-info__container {
+//  background-color: rgba(24, 144, 255, 0.1);
+//  border-radius: 6px;
+//  padding: 10px 12px;
+//}
+
+.answers__select-wrapper{
+  display: flex;
+  align-items: center;
+
+  .app-header {
+    margin-right: 18px;
+  }
+}
+
+.answer__header{
+  display: grid;
+  grid-template-columns: 130px auto;
+  grid-template-rows: auto auto;
+  //flex-direction: column;
+  //align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.answer__header-title{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  grid-column: 1/2;
+  grid-row:  1 / 3;
+  align-self: end;
+  border-bottom: 2px solid rgba(24, 144, 255, 0.3);
+}
+
+.answer-info__date{
+  grid-column: 2/3;
+  grid-row:  1 / 2;
+  font-size: 12px;
+  justify-self: end;
+}
+
+.answer__header-subtitle {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  grid-column: 2/3;
+  grid-row:  2 / 3;
+  justify-self: end;
+  &>span {
+    text-transform: none;
+    font-weight: normal;
+    margin-left: 4px;
+  }
+}
+
+.create-answer__container{
+  margin-top: 16px;
+}
+
+.create-answer__button {
+}
+
+.answer-item__wrapper {
+  border: 1px solid #f0f0f0;
+  padding: 6px 10px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 6%), 0px 1px 3px rgb(0 0 0 / 10%);
+}
+
+.answer-item__card{
+  margin-bottom: 20px;
+  &:hover{
+    cursor: default;
+  }
+}
+
+.answer-item__image-wrapper{
+  display: grid;
+  grid-template-columns: 50px 180px auto;
+  grid-gap: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0f0f0;
+  //border-bottom: 1px solid rgba(24, 144, 255, 0.3);
+
+
+  .student-name{
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+.answer-grade__wrapper{
+  display: flex;
+  max-width: 140px;
+  align-self: center;
+  justify-self: end;
+}
+.answer-grade {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
+  opacity: 0.65;
+
+  //&.good {
+  //  color: green;
+  //}
+  //
+  //&.normal {
+  //  color: orange;
+  //}
+  //
+  //&.bad {
+  //  color: red;
+  //}
+
+  &>span {
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(0,0,0);
+  }
+}
+
+.answer-item-list__image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.answer-list__select {
+  margin-bottom: 16px;
+}
+
+.good {
+  color: green;
+}
+
+.normal {
+  color: orange;
+}
+
+.bad {
+  color: red;
+}

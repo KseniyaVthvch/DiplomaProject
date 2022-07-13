@@ -1,0 +1,148 @@
+.course-card{
+  &.ant-card {
+    width: 380px;
+    min-height: 203px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.course-creation{
+  width: 600px;
+  padding-top: 28px;
+  .ant-form-item-control{
+    max-width: unset;
+  }
+}
+
+.course-info_wrapper{
+  padding: 16px 24px;
+  @include card;
+}
+
+.course_tasks__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.task-name__wrapper{
+  @include card;
+  padding: 16px 0;
+
+  .task-name{
+    padding: 10px 24px;
+    font-size: 16px;
+
+    &.active {
+      background-color: rgba(24,144,255,0.1);
+      border-left: 2px solid rgb(24,144,255);
+    }
+
+    &__button{
+      padding-top: 0;
+      box-shadow: 0px 0px 0px rgb(0 0 0 / 6%), 0px 2px 3px rgb(0 0 0 / 10%);
+      margin-bottom: 12px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.create-task__button, .delete-task__button {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  font-size: 16px;
+  margin-right: 8px;
+
+  &.ant-btn{
+    padding: unset;
+  }
+
+  &>.anticon {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.delete-task__button svg {
+  fill: darkred;
+}
+
+.edit-task__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'left right';
+
+  .manage-task__container{
+    display: flex;
+    grid-area: right;
+    justify-self: end;
+    color: gray;
+    //max-width: 16px;
+
+    svg {
+      height: 14px;
+    }
+
+    .anticon {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+
+
+.icon-button {
+  border: unset;
+  box-shadow: unset;
+}
+
+.task-details__wrapper{
+  @include card;
+  padding: 16px 24px;
+  min-height: 300px;
+}
+
+.answer-button__wrapper{
+  margin-top: 16px;
+}
+
+.course-title__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-title__icon-wrapper{
+  position: relative;
+  margin-left: 16px;
+
+  .anticon{
+    transform: scale(-1, 1);
+  }
+}
+
+.count-of-course-members{
+  position: absolute;
+  background-color: #001529;
+  color: white;
+  min-width: 18px;
+  min-height: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -9px;
+  bottom: -9px;
+}
